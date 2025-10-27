@@ -1,5 +1,3 @@
-this is Isaac
-
 # 🧩 Assignment 5: Group Test Management — *Word Puzzle Game Plus*
 
 ## 🎯 Learning Objectives
