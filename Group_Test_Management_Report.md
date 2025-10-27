@@ -1,6 +1,6 @@
 # 🧪 Group Test Management Report — Word Puzzle Game Plus
 
-**Level:** Intermediate QA | **Week 5:** Test Management
+**Level:** QA | **Week 5:** Test Management
 
 **Course:** Software Testing & Quality Assurance  
 **Module:** Test Management (Week 5)  
@@ -15,7 +15,7 @@
 |------|------|------------------|
 | Test Manager | Okai Nyarko Isaac | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | Sammy Shoka | Risk identification, prioritization, test design linkage |
-| Test Executor | joel githara | Execution, evidence capture, defect logging |
+| Test Executor | Joel Githara | Execution, evidence capture, defect logging |
 
 ---
 
