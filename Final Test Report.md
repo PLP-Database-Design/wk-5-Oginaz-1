@@ -13,7 +13,7 @@
 |------|------|------------------|
 | Test Manager | | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Test Executor | joel githara| Execution, evidence capture, defect logging |
 
 ## Group Rules
 
