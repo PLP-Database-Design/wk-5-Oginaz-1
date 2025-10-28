@@ -150,6 +150,7 @@
 |Test Monitoring & Metrics |Metrics results |Completed |0 |Isaac Okai |
 
 **Progress Tracking Method:**  Github issues and Manual checklist
+
 **Change Control Notes:** Risk table updated after Submit button defect discovery
 
 ## Lessons Learned
