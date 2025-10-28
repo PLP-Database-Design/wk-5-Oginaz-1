@@ -133,8 +133,8 @@
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
+- Total Defects Logged: 5
+- Critical High: Major -2, Medium -2, Low -1
 - Fix Rate: 
 
 ## Test Control & Project Management
@@ -149,13 +149,13 @@
 |Defect Reporting |Defects Table |Completed |0 |Sammy Shoka |
 |Test Monitoring & Metrics |Metrics results |Completed |0 |Isaac Okai |
 
-**Progress Tracking Method:**  
-**Change Control Notes:**
+**Progress Tracking Method:**  Github issues and Manual checklist
+**Change Control Notes:** Risk table updated after Submit button defect discovery
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
+- Most Defect Prone Feature: Hint System
+- Risk Analysis Impact: Did focus on bonus system,submit and hint button
 - Team Communication Effectiveness: 
 - Improvements for Next Cycle: 
 
