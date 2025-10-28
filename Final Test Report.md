@@ -143,7 +143,11 @@
 
 | Phase | Deliverable | Actual Output | Variance | Owner |
 |-------|-------------|---------------|----------|-------|
-| | | | | |
+|Planning |Test Plan |Completed |0 |Isaac Okai |
+|Risk Analysis |Risk Table |Completed |0 |Sammy Shoka |
+|Test Design & Execution |Test Cases and Results |Completed |0 |Joel Githara |
+|Defect Reporting |Defects Table |Completed |0 |Sammy Shoka |
+|Test Monitoring & Metrics |Metrics results |Completed |0 |Isaac Okai |
 
 **Progress Tracking Method:**  
 **Change Control Notes:**
