@@ -115,7 +115,12 @@
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+|D -01 |Reset game message not clearing |Low |TC -01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/2#issue-3560892924 |
+|D -02 |Double scoring exploit during post-solve delay |Major |TC -07 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/3#issue-3560894117 |
+|D -03 |Hint Button not deducting points when score is Zero |Major |TC -04 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/6#issue-3561000641 |
+|D -04 |Reset button does not automatically start a new puzzle |Medium |TC -01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/7#issue-3561037593 |
+|D -05 |Reset leaves message and allows Hint without a new puzzle |Medium |TC -01 and TC -04  |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/8#issue-3561083307 |
+
 
 ## Metrics
 
