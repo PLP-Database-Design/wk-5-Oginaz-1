@@ -88,8 +88,8 @@ The primary objectives of this test plan are to:
 - **Repository Management:** GitHub (for version control and issue tracking)
 - **Defect Management:** GitHub Issues
 - **Documentation:** Markdown files
-- **Communication:** Team collaboration through GitHub Projects/Issues
-- **Test Data:** Word bank included in application (10 words)
+- **Communication:** Team collaboration through GitHub and WhatsApp
+- **Test Data:** Word bank included in application
 
 ### 1.4 Schedule (Phase Timeline)
 

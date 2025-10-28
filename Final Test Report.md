@@ -39,25 +39,53 @@
 
 ### Objectives
 
-- 
+- Functionality Verification: Ensure Reset, Leaderboard, and Bonus Round work as specified.
+- Data Integrity: Validate score calculation, leaderboard persistence, and state management.
+- Risk Mitigation: Focus tests on high-risk areas (localStorage, bonus logic, edge cases).
+- Quality Assurance: Maintain stability, UX quality, and data consistency across flows.
+- Team Collaboration: Demonstrate effective planning, execution, and monitoring.
 
 ### Scope
 
 **In Scope:**
-- 
+- Functional Testing:
+  - Reset Game state management
+  - Leaderboard storage/retrieval from localStorage
+  - Bonus Round calculation and trigger logic
+  - Score calculation with and without hints
+  - Puzzle scrambling and validation
+  - Hint display and cost deduction
+- Non-Functional Testing:
+  - Usability and accessibility
+  - Browser compatibility (Chrome desktop)
+  - UI responsiveness
+  - Error handling and edge cases
 
 **Out of Scope:**
-- 
+- Cross-browser testing beyond Chrome desktop
+- Performance testing under load
+- Security testing of localStorage
+- Mobile device testing
+- Network connectivity scenarios
+- Backend server integration
 
 ### Tools & Resources
 
-- 
+- Test Environment: Chrome Browser (Desktop) — latest stable
+- Repository Management: GitHub
+- Defect Management: GitHub Issues
+- Documentation: Markdown files
+- Communication: GitHub and WhatsApp
+- Test Data: Built-in word bank
 
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+| Planning | 2 days | [TBD] | [TBD] |
+| Design | 1 day | [TBD] | [TBD] |
+| Execution | 3 days | [TBD] | [TBD] |
+| Reporting | 1 day | [TBD] | [TBD] |
 
 ## Risk Analysis
 
