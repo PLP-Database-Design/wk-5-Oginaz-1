@@ -143,3 +143,15 @@ The primary objectives of this test plan are to:
 ---
 
 ## 2. Risk Analysis
+### Risks
+
+| ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
+|----|---------|------------------|------------|--------|----------|---------------------|
+|R01 |Reset Button |Game state may not reset all variables |Medium |High |High |Validate all state variables and UI values reset correctly |
+|R02 |Leader Board |Incorrect Score sorting or overwriting of scores |Medium |Medium |Critical |Test boundary values and local storage persistence |
+|R03 |Bonus Round |Logic error could double at wrong time |Medium |Medium |Medium |Test with cumulative solves and verify arithmetic logic |
+|R04 |Hint Bonus |Hint points may not be deducted when score is zero |Medium |Medium |High |Validate deduction logic and arithmetic |
+|R05 |Input Validation |Empty input   |low |Medium |Low |Add validation message and error messages |
+|R06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
+|R07 |Submit Button |Clicking submit rapidly multiple times before next puzzle loads causing repeated score increments and false bonus triggers. |High |High |High |Disable Submit and Hint buttons immediately after a correct guess, and re-enable them only once new puzzle loads |
+
