@@ -189,13 +189,11 @@ The primary objectives of this test plan are to:
 - Test Case Pass Percent: 78% (7/9 * 100)
 - Defect Density: 0.56 (5/9)
 - Risk Coverage Percent: 86%
-- Regression Success Rate: 
 
 ### Defect Summary
 
 - Total Defects Logged: 5
 - Critical High: Major -2, Medium -2, Low -1
-- Fix Rate: 
 
 ### Phases
 

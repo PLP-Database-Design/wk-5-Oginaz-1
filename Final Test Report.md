@@ -137,13 +137,11 @@
 - Test Case Pass Percent: 78% (7/9 * 100)
 - Defect Density: 0.56 (5/9)
 - Risk Coverage Percent: 86%
-- Regression Success Rate: 
 
 ### Defect Summary
 
 - Total Defects Logged: 5
 - Critical High: Major -2, Medium -2, Low -1
-- Fix Rate: 
 
 ## Test Control & Project Management
 
@@ -182,6 +180,6 @@
 
 ## Overall Summary
 
-**Statement:** 
+**Statement:** Executed 9 test cases with 7 passes and 2 failures. Logged 5 open defects covering scoring integrity, reset behavior, and hint edge cases. High-priority risks largely validated; remaining issues require fixes.
 
-**Test Status:** ☐ Completed / ☐ In Progress / ☐ Deferred
+**Test Status:** ☐ In Progress /  ☒ Completed / ☐ Deferred
