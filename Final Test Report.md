@@ -31,9 +31,9 @@
 
 | Feature | Description | Risk Category |
 |---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Reset Game | Clears score and progress instantly | High — State integrity & control flow |
+| Leaderboard | Stores top 3 scores in localStorage | Medium — Data persistence & sorting |
+| Bonus Round | Every 3 puzzles → doubles score | Medium — Logic correctness & sequencing |
 
 ## Test Plan
 
@@ -157,8 +157,8 @@
 
 - Most Defect Prone Feature: Hint System
 - Risk Analysis Impact: Did focus on bonus system,submit and hint button
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+- Team Communication Effectiveness: Cross-channel updates (GitHub + WhatsApp) reduced blockers and sped decisions.
+- Improvements for Next Cycle: Automate regression (smoke tests) and tighten control on post-solve state.
 
 ## Attachments
 
@@ -168,7 +168,7 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
+| Okai Nyarko Isaac | Test Manager | O.N.I | 2025-10-28 |
 | | Risk Analyst | | |
 | | Test Executor | | |
 
