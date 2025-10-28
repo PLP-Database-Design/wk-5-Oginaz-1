@@ -93,13 +93,13 @@
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
 |----|---------|------------------|------------|--------|----------|---------------------|
-|TC -01 |Reset Button |Game state may not reset all variables |Medium |High |High |Validate all state variables and UI values reset correctly |
-|TC -02 |Leader Board |Incorrect Score sorting or overwriting of scores |Medium |Medium |Critical |Test boundary values and local storage persistence |
-|TC -03 |Bonus Round |Logic error could double at wrong time |Medium |Medium |Medium |Test with cumulative solves and verify arithmetic logic |
-|TC -04 |Hint Bonus |Hint points may not be deducted when score is zero |Medium |Medium |High |Validate deduction logic and arithmetic |
-|TC -05 |Input Validation |Empty input   |low |Medium |Low |Add validation message and error messages |
-|TC -06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
-|TC -07 |Submit Button |Clicking submit rapidly multiple times before next puzzle loads causing repeated score increments and false bonus triggers. |High |High |High |Disable Submit and Hint buttons immediately after a correct guess, and re-enable them only once new puzzle loads |
+|R01 |Reset Button |Game state may not reset all variables |Medium |High |High |Validate all state variables and UI values reset correctly |
+|R02 |Leader Board |Incorrect Score sorting or overwriting of scores |Medium |Medium |Critical |Test boundary values and local storage persistence |
+|R03 |Bonus Round |Logic error could double at wrong time |Medium |Medium |Medium |Test with cumulative solves and verify arithmetic logic |
+|R04 |Hint Bonus |Hint points may not be deducted when score is zero |Medium |Medium |High |Validate deduction logic and arithmetic |
+|R05 |Input Validation |Empty input   |low |Medium |Low |Add validation message and error messages |
+|R06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
+|R07 |Submit Button |Clicking submit rapidly multiple times before next puzzle loads causing repeated score increments and false bonus triggers. |High |High |High |Disable Submit and Hint buttons immediately after a correct guess, and re-enable them only once new puzzle loads |
 
 
 ### Risk Coverage
@@ -117,11 +117,11 @@
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-|D -01 |Reset game message not clearing |Low |TC -01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/2#issue-3560892924 |
-|D -02 |Double scoring exploit during post-solve delay |Major |TC -07 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/3#issue-3560894117 |
-|D -03 |Hint Button not deducting points when score is Zero |Major |TC -04 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/6#issue-3561000641 |
-|D -04 |Reset button does not automatically start a new puzzle |Medium |TC -01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/7#issue-3561037593 |
-|D -05 |Reset leaves message and allows Hint without a new puzzle |Medium |TC -01 and TC -04  |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/8#issue-3561083307 |
+|D -01 |Reset game message not clearing |Low |R01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/2#issue-3560892924 |
+|D -02 |Double scoring exploit during post-solve delay |Major |R07 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/3#issue-3560894117 |
+|D -03 |Hint Button not deducting points when score is Zero |Major |R04 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/6#issue-3561000641 |
+|D -04 |Reset button does not automatically start a new puzzle |Medium |R01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/7#issue-3561037593 |
+|D -05 |Reset leaves message and allows Hint without a new puzzle |Medium |R01 and R04  |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/8#issue-3561083307 |
 
 
 ## Metrics
