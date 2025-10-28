@@ -222,4 +222,4 @@ The primary objectives of this test plan are to:
 |------|------|-----------|------|
 | Okai Nyarko Isaac | Test Manager | O.N.I | 2025-10-28 |
 | Sammy Shoka| Risk Analyst | S.S | 2025-10-28 |
-| | Test Executor | | |
+|Joel Githara | Test Executor | J.G|2025-10-28 |
