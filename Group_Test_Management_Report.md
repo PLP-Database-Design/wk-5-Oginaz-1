@@ -155,3 +155,73 @@ The primary objectives of this test plan are to:
 |R06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
 |R07 |Submit Button |Clicking submit rapidly multiple times before next puzzle loads causing repeated score increments and false bonus triggers. |High |High |High |Disable Submit and Hint buttons immediately after a correct guess, and re-enable them only once new puzzle loads |
 
+### Risk Coverage
+
+- Tested Risks Percent: 86% (6 out 7 risks tested)
+- Untested Risks Percent: 14% (1 out 7 risk untested -UI)
+
+## Test Cases
+
+| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
+|----|---------|-----------|----------------|---------------|--------|-----------|
+|TC-01 |Reset Button |Verify reset clears all game variables |Score, solved count, and hint reset to zero |Works correctly |Pass |R01 |
+|TC-02 |Leader Board |Validate score sorting and top 3 display |Scores sorted in descending order and top 3 retained after refreshing |Works correctly |Pass |R02 |
+|TC-03 |Leader Board |Confirm new lower score doesn’t overwrite higher ones |Scores below top 3 should be ignored i.e leaderboard remains unchanged |Works correctly |Pass |R02 |
+|TC-04 |Bonus Round |Verify score doubles only every 3rd correct solve |Score doubles after every 3 correct guesses |Works correctly |Pass |R03 |
+|TC-05 |Hint Bonus |Verify 2-point deduction occurs correctly on hint use |Score decreases by 2 after hint |Hint deductions occurs when score > 0 only |Fail |R04 |
+|TC-06 |Hint Bonus |Verify that 2-point deduction occurs only once per puzzle |Only one hint per puzzle |Works correctly |Pass |R04 |
+|TC-07 |Input Validation |Warning shown when submitting empty input |Error message displayed |Works correctly |Pass |R05 |
+|TC-08 |Submit Button |Prevent multiple score increments from rapid clicks |Only one score increment allowed per correct guess |Rapid clicks increment the score |Fail |R07 |
+|TC-09 |Submit Button |Ensure buttons re-enable after new puzzle loads |Submit button active  |Works correctly |Pass |R07 |
+
+## Defects
+
+| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
+|----|-------------|----------|---------|--------|-------------|
+|D -01 |Reset game message not clearing |Low |R01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/2#issue-3560892924 |
+|D -02 |Double scoring exploit during post-solve delay |Major |R07 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/3#issue-3560894117 |
+|D -03 |Hint Button not deducting points when score is Zero |Major |R04 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/6#issue-3561000641 |
+|D -04 |Reset button does not automatically start a new puzzle |Medium |R01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/7#issue-3561037593 |
+|D -05 |Reset leaves message and allows Hint without a new puzzle |Medium |R01 and R04  |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/8#issue-3561083307 |
+
+## Metrics
+
+- Test Case Pass Percent: 78% (7/9 * 100)
+- Defect Density: 0.56 (5/9)
+- Risk Coverage Percent: 86%
+- Regression Success Rate: 
+
+### Defect Summary
+
+- Total Defects Logged: 5
+- Critical High: Major -2, Medium -2, Low -1
+- Fix Rate: 
+
+### Phases
+
+| Phase | Deliverable | Actual Output | Variance | Owner |
+|-------|-------------|---------------|----------|-------|
+|Planning |Test Plan |Completed |0 |Isaac Okai |
+|Risk Analysis |Risk Table |Completed |0 |Sammy Shoka |
+|Test Design & Execution |Test Cases and Results |Completed |0 |Joel Githara |
+|Defect Reporting |Defects Table |Completed |0 |Sammy Shoka |
+|Test Monitoring & Metrics |Metrics results |Completed |0 |Isaac Okai |
+
+**Progress Tracking Method:**  Github issues and Manual checklist
+
+**Change Control Notes:** Risk table updated after Submit button defect discovery
+
+## Lessons Learned
+
+- Most Defect Prone Feature: Hint System
+- Risk Analysis Impact: Did focus on bonus system,submit and hint button
+- Team Communication Effectiveness: Cross-channel updates (GitHub + WhatsApp) reduced blockers and sped decisions.
+- Improvements for Next Cycle: Automate regression (smoke tests) and tighten control on post-solve state.
+
+## Sign Off
+
+| Name | Role | Initials | Date |
+|------|------|-----------|------|
+| Okai Nyarko Isaac | Test Manager | O.N.I | 2025-10-28 |
+| Sammy Shoka| Risk Analyst | S.S | 2025-10-28 |
+| | Test Executor | | |
