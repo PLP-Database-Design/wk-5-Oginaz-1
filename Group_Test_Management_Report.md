@@ -1,25 +1,23 @@
-# 🧪 Final Group Test Report Template — Word Puzzle Game Plus
+# 🧪 Group Test Management Report — Word Puzzle Game Plus
 
-**Level:** Intermediate QA | **Week 5:** Test Management
+**Level:** QA | **Week 5:** Test Management
 
 **Course:** Software Testing & Quality Assurance  
 **Module:** Test Management (Week 5)  
 **Project Type:** Group Assessment  
 **Submission Date:** 2025-10-28
 
+---
+
 ## Team Information
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | Okai Nyarko Isaac| Planning, scheduling, coordination, metric tracking |
+| Test Manager | Okai Nyarko Isaac | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | Sammy Shoka | Risk identification, prioritization, test design linkage |
-| Test Executor | Joel Githara| Execution, evidence capture, defect logging |
+| Test Executor | Joel Githara | Execution, evidence capture, defect logging |
 
-## Group Rules
-
-- Each student must belong to only one group.
-- Duplicate membership or multiple submissions will result in invalidation.
-- Every group member must contribute towards this project
+---
 
 ## Project Overview
 
@@ -29,39 +27,44 @@
 
 ### Features Under Test
 
-| Feature | Description | Risk Category |
-|---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | High — State integrity & control flow |
-| Leaderboard | Stores top 3 scores in localStorage | Medium — Data persistence & sorting |
-| Bonus Round | Every 3 puzzles → doubles score | Medium — Logic correctness & sequencing |
+| Feature | Description | Test Focus |
+|---------|-------------|------------|
+| Reset Game | Resets score and progress instantly | State management, data integrity |
+| Leaderboard | Stores top 3 scores in `localStorage` | Persistence, boundary values |
+| Bonus Round | Every 3 puzzles → score × 2 | Logic, arithmetic, event sequencing |
 
-## Test Plan
+---
 
-### Objectives
+## 1. Test Plan
 
-- Functionality Verification: Ensure Reset, Leaderboard, and Bonus Round work as specified.
-- Data Integrity: Validate score calculation, leaderboard persistence, and state management.
-- Risk Mitigation: Focus tests on high-risk areas (localStorage, bonus logic, edge cases).
-- Quality Assurance: Maintain stability, UX quality, and data consistency across flows.
-- Team Collaboration: Demonstrate effective planning, execution, and monitoring.
+### 1.1 Test Objectives
 
-### Scope
+The primary objectives of this test plan are to:
 
-**In Scope:**
-- Functional Testing:
-  - Reset Game state management
-  - Leaderboard storage/retrieval from localStorage
+- **Functionality Verification:** Ensure all core game features (Reset Game, Leaderboard, Bonus Round) operate as specified
+- **Data Integrity:** Validate correct score calculation, leaderboard persistence, and state management
+- **Risk Mitigation:** Identify and test high-risk areas including localStorage operations, bonus round logic, and edge cases
+- **Quality Assurance:** Maintain game stability, user experience, and data consistency across all interactions
+- **Team Collaboration:** Demonstrate effective test management through proper planning, execution, and monitoring
+
+### 1.2 Scope
+
+#### In Scope
+- **Functional Testing:**
+  - Reset Game functionality and state management
+  - Leaderboard storage and retrieval from localStorage
   - Bonus Round calculation and trigger logic
-  - Score calculation with and without hints
+  - Score calculation with hints and without hints
   - Puzzle scrambling and validation
   - Hint display and cost deduction
-- Non-Functional Testing:
-  - Usability and accessibility
-  - Browser compatibility (Chrome desktop)
-  - UI responsiveness
+  
+- **Non-Functional Testing:**
+  - Usability and accessibility testing
+  - Browser compatibility (Chrome desktop focus)
+  - User interface responsiveness
   - Error handling and edge cases
 
-**Out of Scope:**
+#### Out of Scope
 - Cross-browser testing beyond Chrome desktop
 - Performance testing under load
 - Security testing of localStorage
@@ -69,26 +72,77 @@
 - Network connectivity scenarios
 - Backend server integration
 
-### Tools & Resources
+### 1.3 Resources
 
-- Test Environment: Chrome Browser (Desktop) — latest stable
-- Repository Management: GitHub
-- Defect Management: GitHub Issues
-- Documentation: Markdown files
-- Communication: GitHub and WhatsApp
-- Test Data: Built-in word bank
+#### Team Structure (3 Members)
 
-### Schedule
+| Role | Responsibilities | Deliverables |
+|------|------------------|--------------|
+| **Test Manager** | • Draft comprehensive test plan<br>• Schedule test activities and milestones<br>• Track test metrics and progress<br>• Coordinate team communication<br>• Manage test artifacts | • Test Plan Document<br>• Test Schedule<br>• Test Metrics Dashboard<br>• Progress Reports |
+| **Risk Analyst** | • Identify functional and non-functional risks<br>• Assess risk likelihood and impact<br>• Prioritize risks and create mitigation strategies<br>• Design high-risk test cases<br>• Create risk-coverage analysis | • Risk Assessment Matrix<br>• Risk Mitigation Plans<br>• High-Priority Test Cases<br>• Risk Coverage Chart |
+| **Test Executor** | • Execute designed test cases<br>• Document test results and evidence<br>• Log defects in GitHub Issues<br>• Capture screenshots and logs<br>• Validate defect fixes<br>• Maintain test execution log | • Test Execution Results<br>• Defect Reports (GitHub Issues)<br>• Test Evidence (Screenshots)<br>• Test Summary Report |
 
-| Phase | Planned Duration | Actual Duration | Status |
-|-------|------------------|-----------------|--------|
-| Planning | 2 days | [TBD] | [TBD] |
-| Design | 1 day | [TBD] | [TBD] |
-| Execution | 3 days | [TBD] | [TBD] |
-| Reporting | 1 day | [TBD] | [TBD] |
+#### Tools & Technologies
 
-## Risk Analysis
+- **Test Environment:** Chrome Browser (Desktop) - Recommended Version: Latest stable
+- **Repository Management:** GitHub (for version control and issue tracking)
+- **Defect Management:** GitHub Issues
+- **Documentation:** Markdown files
+- **Communication:** Team collaboration through GitHub and WhatsApp
+- **Test Data:** Word bank included in application
 
+### 1.4 Schedule (Phase Timeline)
+
+| Phase | Activities | Planned Duration | Actual Duration | Status |
+|-------|-----------|------------------|-----------------|--------|
+| **Planning** | • Test plan creation<br>• Risk analysis<br>• Test case design | 2 days | [TBD] | [TBD] |
+| **Design** | • Finalize test cases<br>• Prepare test data<br>• Setup test environment | 1 day | [TBD] | [TBD] |
+| **Execution** | • Execute test cases<br>• Log defects<br>• Track metrics | 3 days | [TBD] | [TBD] |
+| **Reporting** | • Compile results<br>• Create final report<br>• Team reflection | 1 day | [TBD] | [TBD] |
+
+**Total Estimated Duration:** 7 days
+
+### 1.5 Entry and Exit Criteria
+
+#### Entry Criteria (Pre-Requisites for Test Execution)
+
+- ✅ Test plan approved by all team members
+- ✅ Test environment setup completed (Chrome browser installed)
+- ✅ Application accessible and functional
+- ✅ GitHub repository configured for issue tracking
+- ✅ Test cases documented and reviewed
+- ✅ Risk analysis completed
+- ✅ Team roles assigned and understood
+
+#### Exit Criteria (Conditions to Stop Testing)
+
+- ✅ All planned test cases executed
+- ✅ Minimum 8 test cases completed (≥5 risk-based)
+- ✅ Minimum 2 negative test cases executed
+- ✅ Minimum 1 usability test executed
+- ✅ Minimum 3 defects logged in GitHub Issues
+- ✅ All critical and high-severity defects either fixed or documented
+- ✅ Risk coverage ≥ 80%
+- ✅ Test metrics calculated and recorded
+- ✅ Final test report completed
+- ✅ All team members approved the report
+
+### 1.6 Test Environment
+
+- **Primary Browser:** Chrome (Desktop) - Recommended version
+- **Operating System:** Windows 10 (or macOS/Linux as available)
+- **Screen Resolution:** Minimum 1366x768
+- **Storage:** Application uses browser localStorage (no external dependencies)
+- **Network:** Not required (fully offline capable)
+- **Prerequisites:** 
+  - Chrome browser installed
+  - Application file (`index.html`) accessible locally
+  - GitHub account for issue tracking
+
+
+---
+
+## 2. Risk Analysis
 ### Risks
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
@@ -100,7 +154,6 @@
 |R05 |Input Validation |Empty input   |low |Medium |Low |Add validation message and error messages |
 |R06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
 |R07 |Submit Button |Clicking submit rapidly multiple times before next puzzle loads causing repeated score increments and false bonus triggers. |High |High |High |Disable Submit and Hint buttons immediately after a correct guess, and re-enable them only once new puzzle loads |
-
 
 ### Risk Coverage
 
@@ -131,7 +184,6 @@
 |D -04 |Reset button does not automatically start a new puzzle |Medium |R01 |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/7#issue-3561037593 |
 |D -05 |Reset leaves message and allows Hint without a new puzzle |Medium |R01 and R04  |Open |https://github.com/PLP-Database-Design/wk-5-Oginaz-1/issues/8#issue-3561083307 |
 
-
 ## Metrics
 
 - Test Case Pass Percent: 78% (7/9 * 100)
@@ -142,8 +194,6 @@
 
 - Total Defects Logged: 5
 - Critical High: Major -2, Medium -2, Low -1
-
-## Test Control & Project Management
 
 ### Phases
 
@@ -166,20 +216,10 @@
 - Team Communication Effectiveness: Cross-channel updates (GitHub + WhatsApp) reduced blockers and sped decisions.
 - Improvements for Next Cycle: Automate regression (smoke tests) and tighten control on post-solve state.
 
-## Attachments
-
-- 
-
 ## Sign Off
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
 | Okai Nyarko Isaac | Test Manager | O.N.I | 2025-10-28 |
 | Sammy Shoka| Risk Analyst | S.S | 2025-10-28 |
-| | Test Executor | | |
-
-## Overall Summary
-
-**Statement:** Executed 9 test cases with 7 passes and 2 failures. Logged 5 open defects covering scoring integrity, reset behavior, and hint edge cases. High-priority risks largely validated; remaining issues require fixes.
-
-**Test Status:** ☐ In Progress /  ☒ Completed / ☐ Deferred
+|Joel Githara | Test Executor | J.G|2025-10-28 |
