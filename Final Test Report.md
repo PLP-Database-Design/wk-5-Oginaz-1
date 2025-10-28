@@ -111,7 +111,15 @@
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+|TC-01 |Reset Button |Verify reset clears all game variables |Score, solved count, and hint reset to zero |Works correctly |Pass |R01 |
+|TC-02 |Leader Board |Validate score sorting and top 3 display |Scores sorted in descending order and top 3 retained after refreshing |Works correctly |Pass |R02 |
+|TC-03 |Leader Board |Confirm new lower score doesn’t overwrite higher ones |Scores below top 3 should be ignored i.e leaderboard remains unchanged |Works correctly |Pass |R02 |
+|TC-04 |Bonus Round |Verify score doubles only every 3rd correct solve |Score doubles after every 3 correct guesses |Works correctly |Pass |R03 |
+|TC-05 |Hint Bonus |Verify 2-point deduction occurs correctly on hint use |Score decreases by 2 after hint |Hint deductions occurs when score > 0 only |Fail |R04 |
+|TC-06 |Hint Bonus |Verify that 2-point deduction occurs only once per puzzle |Only one hint per puzzle |Works correctly |Pass |R04 |
+|TC-07 |Input Validation |Warning shown when submitting empty input |Error message displayed |Works correctly |Pass |R05 |
+|TC-08 |Submit Button |Prevent multiple score increments from rapid clicks |Only one score increment allowed per correct guess |Rapid clicks increment the score |Fail |R07 |
+|TC-09 |Submit Button |Ensure buttons re-enable after new puzzle loads |Submit button active  |Works correctly |Pass |R07 |
 
 ## Defects
 
