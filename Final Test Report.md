@@ -104,8 +104,8 @@
 
 ### Risk Coverage
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+- Tested Risks Percent: 86% (6 out 7 risks tested)
+- Untested Risks Percent: 14% (1 out 7 risk untested -UI)
 
 ## Test Cases
 
@@ -134,9 +134,9 @@
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
+- Test Case Pass Percent: 78% (7/9 * 100)
+- Defect Density: 0.56 (5/9)
+- Risk Coverage Percent: 86%
 - Regression Success Rate: 
 
 ### Defect Summary
@@ -177,7 +177,7 @@
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
 | Okai Nyarko Isaac | Test Manager | O.N.I | 2025-10-28 |
-| | Risk Analyst | | |
+| Sammy Shoka| Risk Analyst | S.S | 2025-10-28 |
 | | Test Executor | | |
 
 ## Overall Summary
