@@ -12,7 +12,7 @@
 | Role | Name | Responsibilities |
 |------|------|------------------|
 | Test Manager | Okai Nyarko Isaac| Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
+| Risk Analyst | Sammy Shoka | Risk identification, prioritization, test design linkage |
 | Test Executor | Joel Githara| Execution, evidence capture, defect logging |
 
 ## Group Rules
@@ -65,7 +65,12 @@
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
 |----|---------|------------------|------------|--------|----------|---------------------|
-| | | | | | | |
+|TC -01 |Reset Button |Game state may not reset all variables |Medium |High |High |Validate all state variables and UI values reset correctly |
+|TC -02 |Leader Board |Incorrect Score sorting or overwriting of scores |Medium |Medium |Critical |Test boundary values and local storage persistence |
+|TC -03 |Bonus Round |Logic error could double at wrong time |Medium |Medium |Medium |Test with cumulative solves and verify arithmetic logic |
+|TC -04 |Hint Bonus |Hint points may not be deducted when score is zero |Medium |Medium |High |Validate deduction logic and arithmetic |
+|TC -05 |Input Validation |Empty input or  |low |Medium |Low |Add validation message and error messages |
+|TC -06 |UI |Screen readers may not get updates |Low |Medium |Low |Verify Accessibility tags in Browser |
 
 ### Risk Coverage
 
